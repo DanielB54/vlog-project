@@ -14,9 +14,9 @@ router.post('/', async (req, res) => {
 router.get('/newPost', async (req, res) => {
   try {
     res.render('index', {
-        layout: 
-    })
-} catch (err) {
+      layout: 'main'
+    });
+  } catch (err) {
     res.status(400).json(err);
   }
 });
