@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,3 +27,22 @@
       </ul>
     </header>
   </div>
+
+{{#each}}
+<div class="container">
+
+    <div class="video">
+        {{! User Video Will go here.}}
+
+      <label for="videoDescripton">Description of Video:</label>
+      <textarea id="description"></textarea>
+      <p> {{!Name: {userName}} </p>
+    </div>
+
+    <div class="comments">
+        <input type="text" id="commentSec">
+    </div>
+
+</div>
+{{/each}}
+
