@@ -1,19 +1,33 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="styleesheet" href="/public/css/style.css">
     <title>The world of Vlogs</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
+      <div class="navbar">
+        <nav>
+         <a href="/views/homepage.handlebars">HomePage</a>
+         <a href=""></a>
+         <a href="https://github.com/DanielB54/vlog-project">Github</a>
+        </nav>
+      </div>  
+      <main>
+      <div class="flex-container">
         <header>
-            <h1>Welcome to the world of Videos!</h1> 
+          <h1>Welcome to the world of Videos!</h1>
         </header>
-        <main>
-         {{{ body }}}
-        </main>
+      </div>
+      <div>
+        {{{body}}}
+      </div>
+      </main>
     </div>
-</body>
+    <footer>
+        &copy; vlog-project 2022.
+    </footer>
+  </body>
 </html>
