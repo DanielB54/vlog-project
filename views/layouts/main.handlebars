@@ -3,20 +3,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="styleesheet" href="/public/css/style.css">
     <title>The world of Vlogs</title>
   </head>
   <body>
     <div>
-      <div class="navbar">
-        <nav>
-         <a href="/views/homepage.handlebars">HomePage</a>
-         <a href=""></a>
-         <a href="https://github.com/DanielB54/vlog-project">Github</a>
-        </nav>
-      </div>  
+      <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark">
+        <span class="fs-4">Videoscape</span>
+      </p>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Logout</a></li>
+      </ul>
+    </header>
+  </div> 
       <main>
-      <div class="flex-container">
+      <div class="d-flex justify-content-center">
         <header>
           <h1>Welcome to the world of Videos!</h1>
         </header>
@@ -26,7 +35,7 @@
       </div>
       </main>
     </div>
-    <footer>
+    <footer class="d-flex justify-content-center">
         &copy; vlog-project 2022.
     </footer>
   </body>
