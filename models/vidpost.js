@@ -16,7 +16,7 @@ Vidpost.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-
+    // video content
     content: {
       type: DataTypes.STRING(500),
       allowNull: false,
