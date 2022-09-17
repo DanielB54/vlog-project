@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Sal",
+      "content": "sal@hotmail.com",
+      "description": "password12345",
+      "user_id": 1
+    },
+    {
+      "title": "Lernantino",
+      "content": "lernantino@gmail.com",
+      "description": "password12345",
+      "user_id": 2
+    },
+    {
+      "title": "Amiko",
+      "content": "amiko2k20@aol.com",
+      "description": "password12345",
+      "user_id": 3
+    },
+    {
+      "title": "Jordan",
+      "content": "jordan99@msn.com",
+      "description": "password12345",
+      "user_id": 4
+    },
+    {
+      "title": "Blake",
+      "content": "the_blake@yahoo.com",
+      "description": "password12345",
+      "user_id": 5
+    }
+  ]
