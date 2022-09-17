@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
 
 router.get('/newPost', async (req, res) => {
   try {
-    res.render('index', {
+    res.render('login', {
       layout: 'main'
     });
   } catch (err) {
