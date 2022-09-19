@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Vidpost } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/homepage', withAuth, async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   const vidPostData = await Vidpost.findAll();
   const videos = vidPostData.map((userVideo) => {
     return userVideo.toJSON();
