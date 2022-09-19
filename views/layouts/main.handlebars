@@ -14,14 +14,11 @@
       <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark">
         <span class="fs-4">Videoscape</span>
       </p>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a id="logout" href="#" class="nav-link active">Logout</a></li>
-      </ul>
+        <nav>
+          {{!-- {{#if loggedIn }} --}}
+            <button class="btn btn-primary" type="submit" id="logout">Logout</button>
+          {{!-- {{/if}}  --}}
+        </nav>
     </header>
   </div> 
       <main>
@@ -38,5 +35,8 @@
     <footer class="d-flex justify-content-center">
         &copy; vlog-project 2022.
     </footer>
+    {{!-- {{#if loggedIn}} --}}
+    <script src="/public/js/logout.js"></script>
+    {{!-- {{/if}} --}}
   </body>
 </html>
