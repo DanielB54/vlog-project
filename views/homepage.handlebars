@@ -15,17 +15,20 @@
 <script type="text/javascript">  
 var myWidget = cloudinary.createUploadWidget({
   cloudName: 'vlog-project', 
-  uploadPreset: 'ml_default'}, (error, result) => { 
+  uploadPreset: 'ml_default'}, async (error, result) => { 
     let newPost;
     if (!error && result && result.event === "success") { 
       console.log('Done! Here is the image info: ', result.info);
       newPost = {
-        file_name: result.info.url
+        content: result.info.url
+        title: 'Video Post'
+        description: 'Your description here'
       } 
-        fetch('/api/posts', {
+       await fetch('/api/posts', {
             method: 'POST',
             body: JSON.stringify(newPost)
         });
+        window.location.reload();
     }
 
 
